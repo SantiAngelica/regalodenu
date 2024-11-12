@@ -9,7 +9,7 @@ const arr = [
 function efectoText(elemento, texto, i = 0, callback) {
     elemento.textContent += texto[i];
     if (i < texto.length - 1) {
-        setTimeout(() => efectoText(elemento, texto, i + 1, callback));
+        setTimeout(() => efectoText(elemento, texto, i + 1, callback), 75);
     } else {
         callback();  // Llama a la función de callback cuando termine el texto
     }
