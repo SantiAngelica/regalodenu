@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  padding: 20px;
+  background-image: url('assets/fondo.png');
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  /* Evita que la imagen se repita */
+  background-attachment: fixed;
+  /* La imagen se queda fija al hacer scroll */
+  background-position: center;
+}
+section{
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.container_typing {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  background-color: white;
+}
+
+.carousel,
+.carousel-inner {
+  height: 400px;
+  width: 400px;
+}
+
+.img-car {
+  height: 400px;
+  width: auto
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
