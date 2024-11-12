@@ -53,3 +53,10 @@ figure {
   align-items: center;
   justify-content: center;
 }
+.box-carousel{
+  display: none;
+}
+.available{
+  display: flex;
+  flex-direction: column ;
+}

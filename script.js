@@ -9,7 +9,7 @@ const arr = [
 function efectoText(elemento, texto, i = 0, callback) {
     elemento.textContent += texto[i];
     if (i < texto.length - 1) {
-        setTimeout(() => efectoText(elemento, texto, i + 1, callback), 75);
+        setTimeout(() => efectoText(elemento, texto, i + 1, callback));
     } else {
         callback();  // Llama a la función de callback cuando termine el texto
     }
@@ -22,7 +22,10 @@ function iniciarEfectos() {
             efectoText(document.getElementById('text3'), arr[2], 0, () => {
                 efectoText(document.getElementById('text4'), arr[3], 0, () => {
                     efectoText(document.getElementById('text5'), arr[4], 0, () => {
-                        efectoText(document.getElementById('text6'), arr[5], 0);
+                        efectoText(document.getElementById('text6'), arr[5], 0, () => {
+                            document.getElementById('box-carousel').classList.add('available')
+                            document.getElementById('box-carousel').classList.add('container')
+                        });
                     })
                 })
             });
